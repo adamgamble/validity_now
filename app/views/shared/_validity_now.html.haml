@@ -1,0 +1,8 @@
+-content_for :javascripts do
+  :javascript
+    $(document).ready(validity_now());
+
+    function validity_now() {
+      var object_name = "#{object.to_s}"
+      var validations = #{object.validations.to_json}
+    }
